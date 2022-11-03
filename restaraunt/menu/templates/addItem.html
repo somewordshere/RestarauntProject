@@ -1,0 +1,15 @@
+<h1>Add Item</h1>
+
+<form action="addItemSubmit/" method="post">
+{% csrf_token %}
+Category:<br>
+<input name="category">
+<br><br>
+Price:<br>
+<input name="price">
+<br><br>
+Name:<br>
+<input name="name">
+<br><br>
+<input type="submit" value="Submit">
+</form>

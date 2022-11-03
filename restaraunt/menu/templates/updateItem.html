@@ -1,0 +1,19 @@
+<h1>Update item</h1>
+
+<form action="updateItemSubmit/{{ myItem.id }}" method="post">
+{% csrf_token %}
+Category:<br>
+<input name="category" value="{{ myItem.category }}">
+<br><br>
+Price:<br>
+<input name="price" value="{{ myItem.price }}">
+<br><br>
+Name:<br>
+<input name="name" value="{{ myItem.name }}">
+<br><br>
+<input type="submit" value="Submit">
+
+</form>
+
+
+
